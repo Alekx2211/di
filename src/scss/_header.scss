@@ -1,0 +1,126 @@
+.header{
+    .header__item{
+        background-color: var(--dark-gray);
+
+        &:last-child{
+            background-color: var(--white);
+        }
+
+        .header-container{
+            max-width: 1380px;
+        }
+
+        .header-container-nav{
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .header-content__items{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header-content{
+            display: flex;
+            gap: 20px;
+
+            &__wrapper{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .title-page{
+                font-size: 24px;
+                font-weight: normal;
+            }
+
+            .header__block{
+                display: flex;
+                align-items: center;
+                gap: 25px;
+            }
+
+            .header__block_search{
+                position: relative;
+
+                .header__search{
+                    padding: 6px 41px 6px 20px;
+                    border: 1px solid #D5D5D5;
+                    background-color: #fff;
+                    border-radius: 100px;
+                    height: 34px !important;
+                    width: 180px;
+        
+                    &::placeholder{
+                    color: var(--primary-color);
+                    font-size: 18px;
+                    font-weight: normal;
+                    }
+                }
+
+                .header__search_img{
+                    position: absolute;
+                    width: 21px;
+                    height: 21px;
+                    background-image: url('../img/icons/search.svg');
+                    top: 50%;
+                    right: 5%;
+                    transform: translate(-5%, -50%);
+                }
+            }
+
+            .header__block_btn{
+                padding: 6px 53px 6px 20px;
+                background-color: var(--red);
+                height: 34px;
+                border-radius: 100px;
+                color: var(--white);
+                font-size: 18px;
+                position: relative;
+
+                &::after{
+                    content: '';
+                    position: absolute;
+                    width: 22px;
+                    height: 22px;
+                    top: 50%;
+                    right: 10%;
+                    transform: translate(-10%, -50%);
+                    background-image: url('../img/icons/log-in.svg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+        }
+
+        .navigation-wrapper{
+            background-color: var(--white);
+        }
+
+        .menu{
+            padding: 20px 0;
+
+            &__list{
+                display: flex;
+                justify-content: space-around;
+            }
+
+            &__item{
+                background-color: var(--dark-gray);
+                border-radius: 100px;
+                padding: 8px 27px;
+                color: var(--primary-color);
+                font-size: 16px;
+                font-weight: normal;
+
+                &_active{
+                    background-color: var(--heavy-gray);
+                }
+            }
+        }
+    }  
+}
+    
