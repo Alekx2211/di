@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+	"title":"ПЧ | Октябрьская дирекция инфраструктуры"
+})
+
+<body>
+	@@include('html/header.html',{})
+	
+	<main class="main">
+		<section class="photo">
+			<img class="photo__img" src="./img/photo-1.png" alt="картинка">
+		</section>
+		<section class="content">
+			<div class="content__wrapper container">
+				<div class="table-item table-item__big">
+					<h2 class="table-item__title">ПЧ</h2>
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Тип</th>
+								<th>Имя</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="td-icon">
+									<img src="./img/icons/folder.svg" alt="иконка папка">
+								</td>
+								<td class="small-column__autor"><span class="small-table__text">Lorem ipsum dolor sit amet consectetur.</span> <span class="autor">Доцина Татьяна Игоревна</span></td>
+							</tr>
+                            <tr>
+								<td class="td-icon">
+									<img src="./img/icons/folder.svg" alt="иконка папка">
+								</td>
+								<td class="small-column__autor"><span class="small-table__text">Lorem ipsum dolor sit amet consectetur.</span> <span class="autor">Доцина Татьяна Игоревна</span></td>
+							</tr>
+							<tr>
+								<td class="td-icon">
+									<img src="./img/icons/folder.svg" alt="иконка папка">
+								</td>
+								<td class="small-column__autor"><span class="small-table__text">Lorem ipsum dolor sit amet consectetur.</span> <span class="autor">Доцина Татьяна Игоревна</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+	</main>
+	<div class="overlay">
+		<div class="popup">
+			<h2 class="popup-title">Вход</h2>
+			<form action="#" class="form">
+				<input class="popup-input" placeholder="Логин" type="text" required>
+				<input class="popup-input" placeholder="Пароль" type="text" required>
+				<label>
+					<input type="checkbox" class="real-checkbox">
+					<span class="custom-checkbox"></span>
+					<p>Запомнить меня</p>
+				</label>
+				<button class="submit-btn" type="submit">Войти</button>
+			</form>
+			<img src="./img/icons/cross.svg" alt="крестик" class="popup-cross">
+		</div>
+	</div>
+	<script src="js/app.js"></script>
+</body>
+
+</html>
